@@ -1,0 +1,22 @@
+{
+    "hfov": 100.0,
+    "haov": 157.2,
+    "minYaw": -78.6,
+       "yaw": -28.599999999999994,
+    "maxYaw": 78.6,
+    "vaov": 89.49,
+    "vOffset": 0.0,
+    "minPitch": -44.745,
+       "pitch": 0.0,
+    "maxPitch": 44.745,
+    "backgroundColor": "[0.15, 0.15, 0.15]",
+    "type": "multires",
+    "multiRes": {
+        "path": "/%l/%s%y_%x",
+        "fallbackPath": "/fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 6,
+        "cubeResolution": 11040
+    }
+}

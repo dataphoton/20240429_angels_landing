@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 100%;
+        height: 95vh;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "autoLoad": true,
+    "hfov": 50.0,
+    "haov": 103.43,
+    "vaov": 66.57,
+    "vOffset": 0,
+    "yaw": -5,
+    "pitch": -4,
+    "backgroundColor": [0.15, 0.15, 0.15],
+    "type": "multires",
+    "multiRes": {
+        "basePath": "./img/angels_landing_halfway",
+        "path": "/%l/%s%y_%x",
+        "fallbackPath": "/fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 7,
+        "cubeResolution": 21480
+    }
+});
+</script>
+
+</body>
+
+<a href="./index.html">Back</a>
+
+</html>
